@@ -28,14 +28,3 @@ pipeline
             }
         }
     }
-
-    post
-    {
-
-    	always
-    	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'saurabh.porwal@yahoo.com'
-    	}
-
-    }
-}
